@@ -1,0 +1,280 @@
+:root {
+    --main-color: #FFFAF0;
+    --sub-color: #444;
+    --shadow-color: #D9D5CC;
+    --highlight-color: #FFF;
+}
+
+@font-face {
+	font-family: 'cinecaption';
+	src: url('../cinecaption226.ttf');
+}
+
+body {
+    font-family: 'cinecaption';
+    width: 100%;
+    background-color: var(--main-color);
+    color: var(--sub-color);
+    margin-bottom: 50px;
+}
+
+a:link, a:visited {
+    color: var(--sub-color);
+}
+
+button {
+    border: none;
+    color: var(--sub-color);
+    background-color: var(--main-color);
+    text-align: left;
+}
+
+.vex {
+    box-shadow:
+        5px 5px 10px var(--shadow-color),
+        -5px -5px 10px var(--highlight-color);
+}
+
+.mem-foam:hover {
+    box-shadow:
+        inset 5px 5px 10px var(--shadow-color),
+        inset -5px -5px 10px var(--highlight-color);
+}
+
+.cav {
+    box-shadow:
+        inset 5px 5px 10px var(--shadow-color),
+        inset -5px -5px 10px var(--highlight-color);
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.icon-sml {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+
+#loading-screen {
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: 1s;
+}
+
+.loaded {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#svg-animation {
+    width: 450px;
+    opacity: 0;
+}
+
+#eye-title {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 200px;
+}
+
+#svg-title {
+    width: 90%;
+    opacity: 0;
+}
+
+.fill {
+    fill-opacity: 0;
+    fill: var(--sub-color);
+    transition: fill-opacity 0.8s
+}
+
+.draw .fill{
+    fill-opacity: 1
+}
+
+.header-image {
+    width: 100%;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#header-icon {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 40px;
+    left: 50%;
+    z-index: 10;
+    transform: translateX(-30px);
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item.pad {
+    padding-top: 100%;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+.carousel-text {
+    position: absolute;
+    left: 10%;
+}
+
+.carousel-text.high {
+    top: 30%;
+}
+
+.carousel-text.low {
+    top: 70%;
+}
+
+.carousel-text.light {
+    color: var(--main-color);
+}
+
+.carousel-text.dark {
+    color: var(--sub-color);
+}
+
+#punchline {
+    margin-top: 50px;
+    text-align: center;
+}
+
+@keyframes commentanim {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.comment {
+    margin-top: 20px;
+    
+}
+
+.sacrifice1.fast {
+    animation: commentanim 1s;
+}
+
+.sacrifice1.mean {
+    animation: commentanim 1.5s;
+}
+
+
+.sacrifice1.slow {
+    animation: commentanim 2s;
+}
+
+@keyframes fourd {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.sacrifice2 {
+    animation: fourd 1s;
+}
+
+.trans {
+    visibility: hidden;
+}
+
+.menu-item {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.menu-title {
+    margin-left: 10%;
+    height: 150px;
+    width: 250px;
+    background-color: var(--main-color);
+    position: absolute;
+}
+
+.menu-image {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    right: 0;
+}
+
+#contact {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#share-buttons {
+    margin-top: 20px;
+}
+
+.effect-fade {
+    opacity: 0;
+    transition: 1s;
+}
+
+.effect-fade.top {
+    transform: translateY(-200px);
+}
+
+.effect-fade.left {
+    transform: translateX(-200px);
+}
+
+.effect-fade.right {
+    transform: translateX(200px);
+}
+
+.effect-fade.bottom {
+    transform: translateY(200px);
+}
+
+.effect-fade.effect-scroll09 {
+    opacity: 0.9;
+    transform: translate(0, 0);
+}
+
+.effect-fade.effect-scroll1 {
+    opacity: 1;
+    transform: translate(0, 0);
+}
