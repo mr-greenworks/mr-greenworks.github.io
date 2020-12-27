@@ -101,12 +101,14 @@
     }
     
     .article-image-cover {
-        padding-top: 30%;
+        width: 100%;
+        padding-top: 600px;
+        margin-left: 50%;
     }
     
     .article-image {
-        left: 35%;
-        width: 30%;
+        width: 600px;
+        transform: translateX(-300px);
     }
     
     .caption {

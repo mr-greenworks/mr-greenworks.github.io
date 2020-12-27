@@ -31,7 +31,7 @@ function open_work(category, title) {
 
     for (var i = 0; i < works[category][title].img_cnt; i++) {
         html += `
-            <div class='article-image-cover effect-fade bottom'><img class='article-image pad' src="../works/${category}/${title}/${i}.jpg"></div>
+            <div class='article-image-cover effect-fade bottom'><img class='article-image' src="../works/${category}/${title}/${i}.jpg"></div>
             <div class='caption effect-fade left'>
                 <p>${works[category][title].contents[i]}</p>
             </div>
