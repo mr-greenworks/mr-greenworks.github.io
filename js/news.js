@@ -1,7 +1,7 @@
-function open_news(title, content) {
+function open_news(title) {
     var html;
     if ('' == document.getElementById(title).innerHTML) {
-        html = content;
+        html = articles[title].content;
     } else {
         html = '';
     }
@@ -12,18 +12,17 @@ function open_news(title, content) {
 window.onload = function () {
     var html = '';
 
-    articles.forEach(article => {
+    for (let title in articles) {
         html += `
             <button class='vex mem-foam news-item effect-fade left' onclick='open_news(
-                "${article.title}",
-                "${article.content}"
+                "${title}",
             )' ontouchstart=''>
-                <h4>${article.title}</h4>
-                <p>${article.date}<p>
-                <div id='${article.title}' class='news'></div>
+                <h4>${title}</h4>
+                <p>${articles[title].date}<p>
+                <div id='${title}' class='news'></div>
             </button>
         `
-    })
+    }
 
     document.getElementById('stage').innerHTML = html;
 
