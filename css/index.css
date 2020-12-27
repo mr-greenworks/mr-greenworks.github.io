@@ -144,15 +144,8 @@ button {
 
 .carousel-text {
     position: absolute;
-    left: 10%;
-}
-
-.carousel-text.high {
     top: 30%;
-}
-
-.carousel-text.low {
-    top: 70%;
+    left: 10%;
 }
 
 .carousel-text.light {
@@ -181,7 +174,6 @@ button {
 
 .comment {
     margin-top: 20px;
-    
 }
 
 .sacrifice1.fast {
@@ -277,4 +269,59 @@ button {
 .effect-fade.effect-scroll1 {
     opacity: 1;
     transform: translate(0, 0);
+}
+
+@media screen and (min-width: 500px) {
+    .header-image {
+        width: 500px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        margin-bottom: 50px;
+    }
+    
+    #header-icon {
+        width: 80px;
+        height: 80px;
+        transform: translateX(-40px);
+    }
+
+    .carousel-item.pad {
+        padding-top: 30%;
+    }
+    
+    .carousel-text {
+        top: 30%;
+        left: 30%;
+    }
+    
+    .menu-item {
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 60%;
+    }
+    
+    .menu-title {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    h3 {
+        display: inline;
+    }
+
+    .sp-br {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .menu-title {
+        width: 500px;
+    }
 }

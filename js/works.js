@@ -31,7 +31,7 @@ function open_work(category, title) {
 
     for (var i = 0; i < works[category][title].img_cnt; i++) {
         html += `
-            <div class='article-image-cover effect-fade bottom'><img class='article-image' src="../works/${category}/${title}/${i}.jpg"></div>
+            <div class='article-image-cover effect-fade bottom'><img class='article-image pad' src="../works/${category}/${title}/${i}.jpg"></div>
             <div class='caption effect-fade left'>
                 <p>${works[category][title].contents[i]}</p>
             </div>
@@ -53,7 +53,7 @@ function open_category(category) {
                         <h5>${title}</h5>
                         <p>${works[category][title].year}年施工</p>
                     </div>
-                    <div class='col-3'>
+                    <div class='col-3 col-md-2'>
                         <img src='../img/right_arrow.jpg' class='icon'>
                     </div>
                 </button>

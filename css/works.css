@@ -79,3 +79,44 @@
 .caption {
     padding: 30px;
 }
+
+@media screen and (min-width: 600px) {
+    #work-selector {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+
+    .work-selector-item {
+        width: 40%;
+    }
+
+    .work-item {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    .work-title {
+        width: 70%;
+    }
+    
+    .article-image-cover {
+        padding-top: 30%;
+    }
+    
+    .article-image {
+        left: 35%;
+        width: 30%;
+    }
+    
+    .caption {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .work-title {
+        width: 500px;
+    }
+}
