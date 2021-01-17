@@ -39,6 +39,7 @@ function open_work(category, title) {
     }
 
     document.getElementById('stage').innerHTML = html;
+    $(window).scrollTop();
 }
 
 function open_category(category) {
