@@ -52,7 +52,16 @@ function open_category(category) {
                 <button class='row align-items-center work-title effect-fade left' onclick='open_work("${category}", "${title}"); grant_effect();'>
                     <div class='col'>
                         <h5>${title}</h5>
-                        <p>${works[category][title].year}年施工</p>
+                        <p>${works[category][title].year}年
+        `;
+        
+        if ('creations' == category) {
+            html += '作製';
+        } else {
+            html += '施工';
+        }
+        
+        html += `</p>
                     </div>
                     <div class='col-3 col-md-2'>
                         <img src='../img/right_arrow.jpg' class='icon'>
